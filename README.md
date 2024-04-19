@@ -1,5 +1,7 @@
 # My ollama notes
 
+![Ollama taking notes](https://github.com/S1M0N38/my-ollama-notes/blob/main/ollama-taking-notes.jpg?raw=true)
+
 [Ollama](https://ollama.com/) is one of the simplest ways to run Large Language Models (LLMs) on your hardware.
 
 Follow the installation guide on the official website or, if you are on Linux, simply download the single binary and make it executable:
