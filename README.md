@@ -2,7 +2,7 @@
 
 # My ollama notes
 
-![Ollama taking notes](https://github.com/S1M0N38/my-ollama-notes/blob/main/ollama-taking-notes.svg?raw=true)
+![Figure from Ollama blog post about embeddings](https://github.com/S1M0N38/my-ollama-notes/blob/main/ollama-taking-notes.svg?raw=true)
 
 </div>
 
@@ -34,20 +34,20 @@ In order to have fast inference, the models must fit into the GPU memory. (The u
 So the most limiting factor in the choice of model is the amount of VRAM available on the GPU.
 
 - **Small** (\< 13B)
-  - `llama3:8b`
-  - `gemma:7b`
-  - `mistral:7b`
-  - `wizardlm2:7b`
+  - [llama3:8b](https://ollama.com/library/llama3)
+  - [gemma:7b](https://ollama.com/library/gemma)
+  - [mistral:7b](https://ollama.com/library/mistral)
+  - [wizardlm2:7b](https://ollama.com/library/wizardlm2)
   - ...
 - **Medium** (13B - 70B)
-  - `llama3:70b`
-  - `command-r:35b`
-  - `mixtral:8x7b`
+  - [llama3:70b](https://ollama.com/library/llama3)
+  - [command-r:35b](https://ollama.com/library/command-r)
+  - [mixtral:8x7b](https://ollama.com/library/mixtral)
   - ...
 - **Large** (>70B)
-  - `command-r-plus:104b`
-  - `mixtral:8x22b`
-  - `wizardlm2:8x22b`
+  - [command-r-plus:104b](https://ollama.com/library/command-r-plus)
+  - [mixtral:8x22b](https://ollama.com/library/mixtral)
+  - [wizardlm2:8x22b](https://ollama.com/library/wizardlm2)
   - ...
 
 **MoE vs Dense**: Some of the models express the number of parameters as a multiplication (e.g. `mixtral:8x7b`). These models are referred to as Mixture of Experts (MoE) and at inference time, a routing network is used to select a subset of the experts to run (e.g. 2 out of 8) for each token. This effectively reduces the number of parameters used in each forward pass, making token generation faster with minimal loss in performance compared to dense models.
