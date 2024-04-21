@@ -1,0 +1,5 @@
+ollama
+pandas
+seaborn
+matplotlib
+tqdm
