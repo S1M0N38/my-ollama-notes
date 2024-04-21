@@ -58,18 +58,22 @@ So the most limiting factor in the choice of model is the amount of VRAM availab
 
 ## Benchmarks
 
-The following table was produced by running `benchmarks.py` on a machine with:
+Benchmarking model performance and capabilities is quite challenging. In addition to the usual metrics on popular datasets (MMLU, GPQA, HumanEval, GSM-8K, etc.), the [chat bot arena](https://chat.lmsys.org/?leaderboard) provides an ELO-based ranking based on human evaluations of the generated text. Another resource for LLM public perception is the [LocalLLaMa](https://www.reddit.com/r/LocalLLaMA/) subreddit.
+
+Below are some speed benchmarks for several base models available on Ollama. The plots were produced by running `benchmarks.py` on a machine equipped with:
 
 - **CPU**: AMD EPYC-Rome (14 cores)
 - **GPU**: NVIDIA A6000 (48 GB)
 - **RAM**: 92 GB
 
-| model                           | eval speed \[tokens/s\] | total duration \[ms\] | prompt duration \[ms\] | eval duration \[ms\] | eval count \[tokens\] |
-| ------------------------------- | ----------------------: | --------------------: | ---------------------: | -------------------: | --------------------: |
-| llama3:8b-instruct-q4_0         |                 82.5672 |              4.792919 |               0.031767 |             4.626534 |                   382 |
-| gemma:7b-instruct-v1.1-q4_0     |                 79.8138 |             15.619711 |               0.084908 |             3.119762 |                   249 |
-| mistral:7b-instruct-v0.2-q4_0   |                102.1478 |             10.525652 |               0.078379 |             1.488040 |                   152 |
-| wizardlm2:7b-q4_0               |                 99.5369 |             14.505660 |               0.080251 |             5.867169 |                   584 |
-| llama3:70b-instruct-q4_0        |                 14.8496 |             83.692734 |               0.422259 |            26.869336 |                   399 |
-| command-r:35b-v0.1-q4_0         |                 26.3358 |             48.755652 |               0.208876 |            11.239446 |                   296 |
-| mixtral:8x7b-instruct-v0.1-q4_0 |                 50.0879 |             50.029504 |               0.127328 |             4.532030 |                   227 |
+## Eval Speed
+
+How many tokens per second can the model generate in an autoregressive setting?
+
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/plot_eval.svg?raw=true)
+
+## Prompt Eval Speed
+
+How many tokens per second can the model process when given a prompt?
+
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/plot_prompt_eval.svg?raw=true)
