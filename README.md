@@ -66,13 +66,13 @@ Below are some speed benchmarks for several base models available on Ollama. The
 - **GPU**: NVIDIA A6000 (48 GB)
 - **RAM**: 92 GB
 
-## Eval Speed
+### Eval Speed
 
 How many tokens per second can the model generate in an autoregressive setting?
 
 ![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/plot_eval.svg?raw=true)
 
-## Prompt Eval Speed
+### Prompt Eval Speed
 
 How many tokens per second can the model process when given a prompt?
 
