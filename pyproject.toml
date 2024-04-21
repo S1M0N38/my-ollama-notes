@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 88
+indent-width = 4
+task-tags = ["FIX", "TODO", "HACK", "WARN", "PERF", "NOTE", "TEST"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pyright]
+typeCheckingMode = "off"
