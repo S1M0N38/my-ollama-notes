@@ -2,9 +2,11 @@
 
 # My ollama notes
 
-![Figure from Ollama blog post about embeddings](https://github.com/S1M0N38/my-ollama-notes/blob/main/ollama-taking-notes.svg?raw=true)
+![Figure from Ollama blog post about embeddings](https://github.com/S1M0N38/my-ollama-notes/blob/main/ollama-taking-notes.svg?raw=true "Figure from ollama.com/blog/embedding-models")
 
 </div>
+
+---
 
 [Ollama](https://ollama.com/) is one of the simplest ways to run Large Language Models (LLMs) on your hardware.
 
