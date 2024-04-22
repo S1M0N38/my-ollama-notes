@@ -93,6 +93,6 @@ Even though the model zoo can be overwhelming with new models released regularly
 
 Once you have identified a model or models that meet your requirements, you can further "optimize" your choice by considering the following:
 
--. **Quantization**: Move to a less quantized model if you have spare VRAM (while keeping an eye on the speed).
--. **Fine-tuned version**: The LLM community often releases fine-tuned versions of the base models for specific tasks (e.g., uncensored models, improved prompt following capabilities, etc.).
--. **Inference engine**: Ollama is easy to start with, but there exist more performant inference engines than llama.cpp (exllamav2, vllm, etc.). See [here](https://www.reddit.com/r/LocalLLaMA/comments/1anb2fz/guide_to_choosing_quants_and_engines/) and [here](https://www.reddit.com/r/LocalLLaMA/comments/1c9mn1n/whats_the_fastest_local_inference_engine_right/).
+- **Quantization**: Move to a less quantized model if you have spare VRAM (while keeping an eye on the speed).
+- **Fine-tuned version**: The LLM community often releases fine-tuned versions of the base models for specific tasks (e.g., uncensored models, improved prompt following capabilities, etc.).
+- **Inference engine**: Ollama is easy to start with, but there exist more performant inference engines than llama.cpp (exllamav2, vllm, etc.). See [here](https://www.reddit.com/r/LocalLLaMA/comments/1anb2fz/guide_to_choosing_quants_and_engines/) and [here](https://www.reddit.com/r/LocalLLaMA/comments/1c9mn1n/whats_the_fastest_local_inference_engine_right/).
