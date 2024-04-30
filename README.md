@@ -75,13 +75,13 @@ Below are some speed benchmarks for several base models available on Ollama. The
 
 How many tokens per second can the model generate in an autoregressive setting?
 
-![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/plot_eval.svg?raw=true)
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/A6000/plot_eval.svg?raw=true)
 
 ### Prompt Eval Speed
 
 How fast (in tokens/s) can the model process a given prompt?
 
-![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/plot_prompt_eval.svg?raw=true)
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/A6000/plot_prompt_eval.svg?raw=true)
 
 ## Model Choice
 
