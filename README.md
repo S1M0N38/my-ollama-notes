@@ -67,6 +67,10 @@ Benchmarking model performance and capabilities is quite challenging. In additio
 
 Below are some speed benchmarks for several base models available on Ollama. The plots were produced by running `benchmarks.py` on a machine equipped with:
 
+<details>
+
+<summary>NVIDIA A6000</summary>
+
 - **CPU**: AMD EPYC-Rome (14 cores)
 - **GPU**: NVIDIA A6000 (48 GB)
 - **RAM**: 92 GB
@@ -82,6 +86,29 @@ How many tokens per second can the model generate in an autoregressive setting?
 How fast (in tokens/s) can the model process a given prompt?
 
 ![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/A6000/plot_prompt_eval.svg?raw=true)
+
+</details>
+
+<details>
+
+<summary>APPLE M1 PRO</summary>
+
+- **CPU**: APPLE M1 PRO
+- **RAM**: 32 GB
+
+### Eval Speed
+
+How many tokens per second can the model generate in an autoregressive setting?
+
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1PRO/plot_eval.svg?raw=true)
+
+### Prompt Eval Speed
+
+How fast (in tokens/s) can the model process a given prompt?
+
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1PRO/plot_prompt_eval.svg?raw=true)
+
+</details>
 
 ## Model Choice
 
