@@ -9,18 +9,30 @@ from pathlib import Path
 
 MESSAGE_LIMIT = None
 
+# # A6000
+# MODELS = [
+#     # Small
+#     "llama3:8b-instruct-q4_0",
+#     "gemma:7b-instruct-v1.1-q4_0",
+#     "mistral:7b-instruct-v0.2-q4_0",
+#     "wizardlm2:7b-q4_0",
+#     # Medium
+#     "llama3:70b-instruct-q4_0",
+#     "command-r:35b-v0.1-q4_0",
+#     "mixtral:8x7b-instruct-v0.1-q4_0",
+#     # Large
+#     # add here large models to test ...
+# ]
+
+# M1PRO
 MODELS = [
+    # Tiny
+    "phi3:3.8b-mini-instruct-4k-q4_K_M",
     # Small
     "llama3:8b-instruct-q4_0",
     "gemma:7b-instruct-v1.1-q4_0",
     "mistral:7b-instruct-v0.2-q4_0",
     "wizardlm2:7b-q4_0",
-    # Medium
-    "llama3:70b-instruct-q4_0",
-    "command-r:35b-v0.1-q4_0",
-    "mixtral:8x7b-instruct-v0.1-q4_0",
-    # Large
-    # add here large models to test ...
 ]
 
 AVAILABLE_MODELS = [model["model"] for model in ollama.list()["models"]]
@@ -37,11 +49,12 @@ COLUMNS = [
 ]
 
 
-BENCHMARKS_PATH = Path("benchmarks")
+# NOTE: Change the path to the benchmarks folder
+BENCHMARKS_PATH = Path("benchmarks") / "M1PRO"
 EVAL_PATH = BENCHMARKS_PATH / "benchmarks_eval.csv"
 PROMPT_EVAL_PATH = BENCHMARKS_PATH / "benchmarks_prompt_eval.csv"
 
-with open(BENCHMARKS_PATH / "messages.json") as f:
+with open(BENCHMARKS_PATH.parent / "messages.json") as f:
     MESSAGES = json.load(f)
 
 
