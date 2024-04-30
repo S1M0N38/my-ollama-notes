@@ -24,7 +24,7 @@ MESSAGE_LIMIT = None
 #     # add here large models to test ...
 # ]
 
-# M1PRO
+# M1 MAX
 MODELS = [
     # Tiny
     "phi3:3.8b-mini-instruct-4k-q4_K_M",
@@ -50,7 +50,7 @@ COLUMNS = [
 
 
 # NOTE: Change the path to the benchmarks folder
-BENCHMARKS_PATH = Path("benchmarks") / "M1PRO"
+BENCHMARKS_PATH = Path("benchmarks") / "M1MAX"
 EVAL_PATH = BENCHMARKS_PATH / "benchmarks_eval.csv"
 PROMPT_EVAL_PATH = BENCHMARKS_PATH / "benchmarks_prompt_eval.csv"
 

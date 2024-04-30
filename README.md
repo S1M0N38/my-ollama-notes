@@ -91,22 +91,22 @@ How fast (in tokens/s) can the model process a given prompt?
 
 <details>
 
-<summary>APPLE M1 PRO</summary>
+<summary>APPLE M1 MAX</summary>
 
-- **CPU**: APPLE M1 PRO
+- **CPU**: APPLE M1 MAX
 - **RAM**: 32 GB
 
 ### Eval Speed
 
 How many tokens per second can the model generate in an autoregressive setting?
 
-![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1PRO/plot_eval.svg?raw=true)
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_eval.svg?raw=true)
 
 ### Prompt Eval Speed
 
 How fast (in tokens/s) can the model process a given prompt?
 
-![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1PRO/plot_prompt_eval.svg?raw=true)
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_prompt_eval.svg?raw=true)
 
 </details>
 
