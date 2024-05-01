@@ -24,7 +24,7 @@ MESSAGE_LIMIT = None
 #     # add here large models to test ...
 # ]
 
-# M1 MAX
+# M1 MAX and 1080TI
 MODELS = [
     # Tiny
     "phi3:3.8b-mini-instruct-4k-q4_K_M",
@@ -34,6 +34,7 @@ MODELS = [
     "mistral:7b-instruct-v0.2-q4_0",
     "wizardlm2:7b-q4_0",
 ]
+
 
 AVAILABLE_MODELS = [model["model"] for model in ollama.list()["models"]]
 [ollama.pull(model) for model in MODELS if model not in AVAILABLE_MODELS]
@@ -50,7 +51,7 @@ COLUMNS = [
 
 
 # NOTE: Change the path to the benchmarks folder
-BENCHMARKS_PATH = Path("benchmarks") / "M1MAX"
+BENCHMARKS_PATH = Path("benchmarks") / "1080TI"
 EVAL_PATH = BENCHMARKS_PATH / "benchmarks_eval.csv"
 PROMPT_EVAL_PATH = BENCHMARKS_PATH / "benchmarks_prompt_eval.csv"
 

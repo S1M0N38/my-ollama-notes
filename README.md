@@ -69,6 +69,48 @@ Below are some speed benchmarks for several base models available on Ollama. The
 
 <details>
 
+<summary>APPLE M1 MAX</summary>
+
+- **CPU**: APPLE M1 MAX
+- **RAM**: 32 GB
+
+### Eval Speed
+
+How many tokens per second can the model generate in an autoregressive setting?
+
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_eval.svg?raw=true)
+
+### Prompt Eval Speed
+
+How fast (in tokens/s) can the model process a given prompt?
+
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_prompt_eval.svg?raw=true)
+
+</details>
+
+<details>
+
+<summary>NVIDIA 1080 TI</summary>
+
+- **CPU**: Intel Xeon CPU E5-2620 v3 @ 2.40GH (24 cores)
+- **RAM**: 126 GB
+
+### Eval Speed
+
+How many tokens per second can the model generate in an autoregressive setting?
+
+![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/1080TI/plot_eval.svg?raw=true)
+
+### Prompt Eval Speed
+
+How fast (in tokens/s) can the model process a given prompt?
+
+![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/1080TI/plot_prompt_eval.svg?raw=true)
+
+</details>
+
+<details>
+
 <summary>NVIDIA A6000</summary>
 
 - **CPU**: AMD EPYC-Rome (14 cores)
@@ -86,27 +128,6 @@ How many tokens per second can the model generate in an autoregressive setting?
 How fast (in tokens/s) can the model process a given prompt?
 
 ![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/A6000/plot_prompt_eval.svg?raw=true)
-
-</details>
-
-<details>
-
-<summary>APPLE M1 MAX</summary>
-
-- **CPU**: APPLE M1 MAX
-- **RAM**: 32 GB
-
-### Eval Speed
-
-How many tokens per second can the model generate in an autoregressive setting?
-
-![Plot eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_eval.svg?raw=true)
-
-### Prompt Eval Speed
-
-How fast (in tokens/s) can the model process a given prompt?
-
-![Plot prompt eval speed](https://github.com/S1M0N38/my-ollama-notes/blob/main/benchmarks/M1MAX/plot_prompt_eval.svg?raw=true)
 
 </details>
 
