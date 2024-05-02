@@ -12,7 +12,7 @@ Follow the installation guide on the official website or, if you are on Linux, s
 
 ```bash
 curl -L https://ollama.com/download/ollama-linux-amd64 -o ollama
-curl +x ollama
+chmod +x ollama
 ```
 
 Then start the Ollama server (and keep it running in the background):
